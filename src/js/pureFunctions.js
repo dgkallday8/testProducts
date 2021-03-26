@@ -46,4 +46,18 @@ function assocProducts(productList) {
     })
 }
 
-export { clearStyle, checkActiveElement, fixedPrice, correctCode, unit, imgModified, assocProducts }
+function counter(divEl, inputSelector) {
+    const up = divEl.querySelector('.up')
+    const down = divEl.querySelector('.down')
+    up.addEventListener('click', () => {
+        const input = divEl.querySelector(inputSelector)
+        return input.value++
+    })
+    down.addEventListener('click', () => {
+        const input = divEl.querySelector(inputSelector)
+        return input.value <= 1 ? 1 : input.value--
+    })
+}
+
+
+export { clearStyle, checkActiveElement, fixedPrice, correctCode, unit, imgModified, assocProducts, counter }

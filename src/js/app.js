@@ -1,6 +1,6 @@
 import { template } from './template'
 import data from '../products.json'
-import {checkActiveElement, clearStyle} from "./pureFunctions";
+import {checkActiveElement, clearStyle, counter} from './pureFunctions'
 
 
 
@@ -20,6 +20,7 @@ for (let i = 0; i < data.length; i++) {
 }
 productSectionArray.map(el => {
     const priceElements = Array.from(el.querySelectorAll('.unit--select'))
+    counter(el,'.stepper-input')
 
     priceElements.map(element => {
 
