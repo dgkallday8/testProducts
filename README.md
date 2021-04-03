@@ -1,5 +1,5 @@
 Результат:
-https://github.com/dgkallday8/testProducts
+https://dgkallday8.github.io/testProducts/
 
 Тестовое задание.
 
